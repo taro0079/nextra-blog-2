@@ -1,8 +1,5 @@
 import type { NextraThemeLayoutProps } from "nextra";
 
-const components = {};
-export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
-  const { pageMap } = pageOpts;
-  console.log(pageMap);
+export default function Layout({ children }: NextraThemeLayoutProps) {
   return <div>{children}</div>;
 }
