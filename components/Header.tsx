@@ -1,17 +1,22 @@
 import Link from "next/link";
 
 const Header = () => {
+  const listHeader = { HOME: "", BLOG: "posts", about: "about" };
   return (
-    <div className="flex px-8 mx-auto my-4 justify-around">
-      <Link href="/">
-        <div className="text-2xl">taroblog</div>
-      </Link>
-      <Link href="/posts">
-        <div className="text-sm">Blog</div>
-      </Link>
-      <Link href="/about">
-        <div className="text-sm">About</div>
-      </Link>
+    <div className="bg-blue-400 py-4">
+      <div className="container mx-auto">
+        <div className="flex flex-row">
+          {Object.keys(listHeader).map((item) => {
+            return (
+              <Link href={`/${listHeader[item]}`} key={listHeader[item]}>
+                <div className="px-4">
+                  <p className="text-white capitalize">{item}</p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };

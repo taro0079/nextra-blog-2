@@ -10,9 +10,9 @@ const PostCard = ({ post }: { post: post }) => {
           key={post.slug}
           style={{ textDecoration: "none" }}
         >
-          <div className="border-solid border-2 border-indigo-600 my-4 p-4 rounded-lg">
-            <div className="text-2xl">{post.title}</div>
-            <div>{post.date}</div>
+          <div className="my-4 p-4 rounded-lg shadow-md shadow-blue-200/50 hover:shadow-xl hover:shadow-blue-300/50 ease-in duration-200">
+            <div className="text-2xl text-blue-500">{post.title}</div>
+            <div className="text-gray-400">{post.date}</div>
           </div>
         </Link>
       </div>

@@ -4,13 +4,11 @@ import posts from "post.json";
 import PostCard from "@/components/PostCard";
 const Post = () => {
   return (
-    <div className="flex justify-center">
-      <div className="w-1/2">
-        <div className="text-4xl mb-10">Posts</div>
-        {posts.posts.map((post) => (
-          <PostCard post={post} />
-        ))}
-      </div>
+    <div className="justify-center">
+      <div className="text-4xl mb-10 text-blue-500">Posts</div>
+      {posts.posts.map((post) => (
+        <PostCard post={post} />
+      ))}
     </div>
   );
 };

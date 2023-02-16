@@ -1,6 +1,7 @@
 const withNextra = require("nextra")({
   theme: "./theme.tsx",
   themeConfig: "./theme.config.jsx",
+  latex: true,
 });
 
 module.exports = withNextra();

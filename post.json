@@ -10,6 +10,26 @@
       "slug": "/posts/second",
       "date": "2023-02-16",
       "title": "Second Post"
+    },
+    {
+      "slug": "/posts/cornecherry",
+      "date": "2021-08-27",
+      "title": "自作キーボードCorne Cherry"
+    },
+    {
+      "slug": "/posts/about_superconductor",
+      "date": "2021-08-26",
+      "title": "超伝導について"
+    },
+    {
+      "slug": "/posts/vimkeybind",
+      "date": "2021-08-18",
+      "title": "Vimの便利なkeybind"
+    },
+    {
+      "slug": "/posts/monitor_system",
+      "date": "2020-08-12",
+      "title": "ネットを介した熱処理炉の温度モニタシステム作成"
     }
   ]
 }
